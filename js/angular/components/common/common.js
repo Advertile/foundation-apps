@@ -42,7 +42,7 @@
         targetId = parentElement.attr('id');
       }
 
-      element.on('click', function(e) {
+      element.on('click touchstart', function(e) {
         foundationApi.publish(targetId, 'close');
         e.preventDefault();
       });
