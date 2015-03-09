@@ -173,7 +173,7 @@ $rad: 5px;
 }
 
 .main-docs-section {
-  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 .docs-search-box {
@@ -183,19 +183,28 @@ $rad: 5px;
   overflow: visible;
 
   .autocomplete input {
-    font-size: 1rem;
-    padding: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.5em;
   }
 
   .autocomplete > ul {
     margin-left: 0;
     border: 1px solid #ccc;
     border-top: 0;
-    box-shadow: 0 4px 5px rgba(#000, 0.25);
+    box-shadow: 0 4px 5px rgba(#000, 0.1);
+
+    li {
+      font-size: 0.8rem;
+    }
 
     li.active {
       background: $primary-color;
       color: white;
+    }
+
+    .highlight {
+      background-color: transparent;
+      font-weight: bold;
     }
   }
 }
@@ -219,9 +228,7 @@ hr {
   height: 300px;
 }
 
-.badge.docs-example-badges {
-  display: inline-block;
-  position: relative; 
+.docs-example-badges .badge {
   margin-right: 1rem;
 }
 
@@ -773,6 +780,12 @@ hr {
     justify-content: center;
     }
   }
+
+.docs-example-dialog .modal {
+  text-align: center;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 10px rgba(#000, 0.25);
+}
 
 .inline-list {
   display: inline-block;
